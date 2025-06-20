@@ -1,10 +1,9 @@
 name: Deploy
-on:
 # Срабатывает при пуше в ветку main
+on:
   push:
-    branches:
+    branches: 
       - main
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
