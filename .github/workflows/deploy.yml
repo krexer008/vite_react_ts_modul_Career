@@ -2,7 +2,8 @@ name: Deploy
 on:
 # Срабатывает при пуше в ветку main
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
   deploy:
