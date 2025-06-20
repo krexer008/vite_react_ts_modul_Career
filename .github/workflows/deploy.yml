@@ -2,13 +2,15 @@ name: Deploy
 # Срабатывает при пуше в ветку main
 on:
   push:
-    branches: 
+    branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write # Разрешение для записи в репозиторий
+
     steps:
       # 1. Загрузка репозитория
       - name: Checkout
